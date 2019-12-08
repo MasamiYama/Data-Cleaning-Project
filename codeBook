@@ -33,11 +33,8 @@ Replaced "Mag" with "Magnitude"
 Replaced "t" with "Time"
 Replaced "f" with "Frequency"
 Replaced "tBody" with "TimeBody")
-Replaced "-mean()" with "Mean"
 Replaced "-std()" with "Standard"
 Replaced "-freq()" with "Frequency"
-Replaced "angle" with "Angle"
-Replaced "gravity" with "Gravity"
 
 8. From the data set in step 4., create a second, independent tidy data set with the average of each variable 
   for each activity and each subject
