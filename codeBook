@@ -1,0 +1,45 @@
+The script does:
+1. Check and download the file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) as "Coursera_Data_Cleaning.zip"
+  if the file has not been downloaded.
+2. Check and unzip the file if UCI HAR Dataset folder does not exist
+3. Create multiple data frames
+Variable name
+features from features list
+activities from activity_labels.txt
+subject_test from subject_test.txt
+subject_train from subject_train.txt
+x_test from X_test.txt for test data set
+y_test from y_test.txt for test labels
+x_train fron X_train.txt for training data set
+y_train fron y_train.txt for training labels
+
+4. Merge the training and the test sets to create one data set
+X is from x_test and x_train
+Labels is from y_test and y_train
+SUBJ is from subject_test and subject_train)
+data is from SUBJ, Labels and X
+
+5. Extracts only the measurements on the mean and standard deviation for each measurement
+meanandstd is created from data and subject, code and columns containing "mean" and "std"
+
+6. Uses descriptive activity names to name the activities in the data set
+Replaced meanandstd$code with activity names
+
+7. Appropriately label the data set with descriptive variable names
+Replaced "Acc" with "Accelerometer"
+Replaced "Gyro" with "Gyroscope")
+Replaced "BodyBody" with "Body"
+Replaced "Mag" with "Magnitude"
+Replaced "t" with "Time"
+Replaced "f" with "Frequency"
+Replaced "tBody" with "TimeBody")
+Replaced "-mean()" with "Mean"
+Replaced "-std()" with "Standard"
+Replaced "-freq()" with "Frequency"
+Replaced "angle" with "Angle"
+Replaced "gravity" with "Gravity"
+
+8. From the data set in step 4., create a second, independent tidy data set with the average of each variable 
+  for each activity and each subject
+tidyData is a new data set for this.
+
