@@ -61,4 +61,4 @@ colnames(meanandstd)<-gsub("gravity", "Gravity", colnames(meanandstd))
 # 5. From the data set in step 4., create a second, independent tidy data set with the average of each variable for each activity and each subject
 tidyData <- group_by(meanandstd, subject, activity)
 tidyData <- summarise_all(tidyData, mean)
-
+write.table(tidyData, "tidyDataa.txt", row.name=FALSE)
