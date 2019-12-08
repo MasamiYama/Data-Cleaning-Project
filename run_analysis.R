@@ -32,7 +32,6 @@ x_train <- read.table("UCI HAR Dataset/train/X_train.txt", col.names = features$
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt", col.names = "code")
 
 # 1. Merge the training and the test sets to create one data set
-# Test
 X <- rbind(x_test, x_train)
 Labels <- rbind(y_test, y_train)
 SUBJ <- rbind(subject_test, subject_train)
